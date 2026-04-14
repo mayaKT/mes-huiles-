@@ -1,0 +1,482 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Huiles Naturelles - Beauté & Bien-être</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #fff8f0;
+        }
+
+        header {
+            background-color: #8B4513;
+            color: rgb(199, 193, 193);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+        }
+
+        .price {
+            color: green;
+            font-weight: bold;
+        }
+       .Prix {
+            background-color: #8B4513;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .contact {
+            background-color: #8B4513;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: darkgreen;
+        }
+    .melanges {
+    padding: 40px 20px;
+    background: linear-gradient(to right, #fff3e6, #fdf7f0);
+    text-align: center;
+     display: grid;
+    /* Crée 3 colonnes de largeur égale */
+    grid-template-columns: repeat(3, 1fr); 
+    /* Ajoute de l'espace entre les cartes */gap: 30px; 
+    /* Aligne le tout au centre de la page */
+    justify-content: center; 
+    padding: 40px;
+}
+
+.melanges h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    /* Dit au titre de commencer à la colonne 1 et d'aller jusqu'à la fin (4) */
+    grid-column: 1 / 4; 
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px; /* Espace avec les cartes en dessous */
+}
+
+.melange-card {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: left;
+    transition: transform 0.3s;
+    border-left: 5px solid green;
+       /* ... tes autres styles (background, shadow, etc.) ... */
+    
+    width: 100%;       /* Au lieu d'une largeur fixe */
+    max-width: 100%;    /* Pour bien rester dans sa colonne */
+    margin: 0;          /* On enlève le "auto" car la grille gère le centrage */
+    box-sizing: border-box; /* Très important pour que le padding ne dépasse pas */
+}
+
+.melange-card:hover {
+    transform: scale(1.03);
+}
+.melange-card h3 { 
+    color: #8B4513;
+    margin-bottom: 10px;
+}
+.melange-card h2 {
+    color:black;
+    margin-bottom: 10px;
+/* Dit au titre de commencer à la colonne 1 et d'aller jusqu'à la fin (4) */
+    grid-column: 4 / 4; 
+    text-align: center;
+}
+.melange-card p {
+    margin-bottom: 10px;
+}
+
+.melange-card ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.melange-card button {
+    width: 100%;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.melange-card button:hover {
+    background-color: darkgreen;
+}
+/* Si l'écran fait moins de 900px (tablettes/mobiles) */
+@media (max-width: 900px) {
+    .melanges {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes seulement */
+    }
+}
+.message-fin {
+    /* ÉTAPE CRUCIALE : On dit au texte de s'étaler de la colonne 1 jusqu'à la fin */
+    grid-column: 1 / -1; 
+    
+    text-align: center;   /* Centre le texte à l'intérieur */
+    width: 100%;          /* Prend toute la largeur de la grille */
+    margin-top: 40px;     /* Espace au-dessus */
+    font-size: 20px;
+    font-weight: bold;
+    display: block;       /* Force l'affichage en bloc */
+}
+/* Si l'écran fait moins de 600px (smartphones) */
+@media (max-width: 600px) {
+    .melanges {
+        grid-template-columns: 1fr; /* 1 seule colonne comme avant */
+    }
+   }
+</style>
+</head>
+<body>
+<header>
+    <h1>🌿 Huiles Naturelles</h1>
+    <p>Beauté - Santé - Bien-être</p>
+</header>
+
+<div class="container">
+
+    <!-- Produit 1 -->
+    <div class="card">
+        <img src="images - Copie/nigelle.jpg" alt="Huile de nigelle">
+        <h3>Huile de Nigelle</h3>
+      <a href="https://wa.me/22389501934?text=Bonjour%20je%20veux%20commander%20huile%20de%20nigelle" target="_blank"></a>
+        <button>Commander</button>
+    </div>
+
+    <!-- Produit 2 -->
+    <div class="card">
+        <img src="images - Copie/coco.jpg" alt="Huile de coco">
+        <h3>Huile de Coco</h3>
+        <a href="https://wa.me/22389501934?text=Bonjour%20je%20veux%20commander%20huile%20de%20coco" target="_blank"></a>
+        <button>Commander</button>
+    </div>
+
+    <!-- Produit 3 -->
+    <div class="card">
+        <img src="images - Copie/ricin.jpg" alt="Huile de ricin">
+        <h3>Huile de Ricin</h3>
+      <a href="https://wa.me/22389501934?text=Bonjour%20je%20veux%20commander%20huile%20de%20ricin" target="_blank"></a>
+        <button>Commander</button>
+    </div>
+    <!-- Produit 4 -->
+    <div class="card">
+        <img src="images - Copie/jojoba.jpg" alt="Huile de jojoba">
+        <h3>Huile de jojoba</h3>
+        <a href="https://wa.me/22389501934?text=Bonjour%20je%20veux%20commander%20huile%20de%20jojoba" target="_blank"></a>
+        <button>Commander</button>
+    </div>
+    <!-- Produit 5-->
+    <div class="card">
+        <img src="images - Copie/moutardes.jpg" alt="Huile de moutarde">
+        <h3>Huile de moutarde</h3>
+        <a href="https://wa.me/22389501934?text=Bonjour%20je%20veux%20commander%20huile%20de%20moutarde" target="_blank"></a>
+        <button>Commander</button>
+    </div>
+<!-- Produit 6 -->
+    <div class="card">
+        <img src="images - Copie/girofle.jpg" alt="Huile de girofle">
+        <h3>Huile de girofle</h3>
+        <a href="https://wa.me/22389501934?text=Bonjour%20je%20veux%20commander%20huile%20de%20girofle" target="_blank"></a>
+        <button>Commander</button>
+    </div>
+    <!-- Produit 7 -->
+    <div class="card">
+        <img src="images - Copie/olive.jpg" alt="Huile d'olive ">
+        <h3>Huile d'olive</h3>
+       <a href="https://wa.me/22389501934?text=Bonjour%20je%20veux%20commander%20huile%20de%20olive" target="_blank"></a>
+        <button>Commander</button>
+    </div>
+    <!-- Produit 8 -->
+    <div class="card">
+        <img src="images - Copie/fenugrec.jpg" alt="Huile de fenugrec">
+        <h3>Huile de fenugrec</h3>
+        <a href="https://wa.me/22389501934?text=Bonjour%20je%20veux%20commander%20huile%20de%20fenugrec" target="_blank"></a>
+        <button>Commander</button>
+    </div>
+    <!-- Produit 9 -->
+    <div class="card">
+        <img src="images - Copie/romarin.jpg" alt="Huile de romarin">
+        <h3>Huile de romarin</h3>
+        <a href="https://wa.me/22389501934?text=Bonjour%20je%20veux%20commander%20huile%20de%20romarin" target="_blank"></a>
+        <button>Commander</button>
+    </div>
+    <!-- Produit 10 -->
+    <div class="card">
+        <img src="images - Copie/busserole.jpg" alt="Huile de busserole">
+        <h3>Huile de busserole</h3>
+        <a href="https://wa.me/22389501934?text=Bonjour%20je%20veux%20commander%20huile%20de%20busserole" target="_blank"></a>
+        <button>Commander</button>
+    </div>
+    
+
+</div>
+<div class="Prix">
+    <h2> Prix </h2>
+    <p> à partir de 3 = 1000f CFA l'unitée</p>
+    <p> à partir de 2 = 1250f CFA l'unitée</p>
+    <p> à partir de 1 = 1500f CFA l'unitée </p>
+</div>
+
+<div class="contact">
+    <h2>📞 Contact</h2>
+    <p>WhatsApp : 89 50 19 34</p>
+    <p>djelibougou/sotuba, livraison possible partout </p>
+</div>
+
+</body>
+</html>
+<div class="melanges">
+    <h2>🌿✨ Mélanges binaires</h2>
+
+    <div class="melange-card">
+        <h3>💇🏽‍♀️ Ricin + Moutarde</h3>
+        <p><strong>Effet :</strong> pousse rapide et cheveux plus épais</p>
+        <ul>
+            <li>Stimule fortement les racines</li>
+            <li>Accélère la croissance</li>
+            <li>Donne du volume</li>
+        </ul>
+         <a href="https://wa.me/22389501934?text=Bonjour%20je%20veux%20commander%20le%20melange%20ricin%20+%20moutarde%20" target="_blank">
+            <button>Commander</button>
+        </a>
+    </div>
+
+    <div class="melange-card">
+        <h3>🌿 Ricin + Fenugrec</h3>
+        <p><strong>Effet :</strong> volume + longueur</p>
+        <ul>
+            <li>Cheveux plus denses</li>
+            <li>Pousse progressive</li>
+            <li>Nourrit en profondeur</li>
+        </ul>
+         <a href="https://wa.me/22389501934?text=Bonjour%20je%20veux%20commander%20le%20melange%20ricin%20+%20fenugrec%20" target="_blank">
+            <button>Commander</button>
+        </a>
+    </div>
+
+    <div class="melange-card">
+        <h3>🌱 Ricin + Romarin</h3>
+        <p><strong>Effet :</strong> pousse + anti-chute</p>
+        <ul>
+            <li>Réduit la chute</li>
+            <li>Renforce les racines</li>
+            <li>Favorise une pousse saine</li>
+        </ul>
+         <a href="https://wa.me/22389501934?text=Bonjour%20je%20veux%20commander%20le%20melange%20ricin%20+%20romarin%20" target="_blank">
+            <button>Commander</button>
+        </a>
+    </div>
+
+    <div class="melange-card">
+        <h3>🔥 Girofle + Nigelle </h3>
+        <p><strong>Effet :</strong> cuir chevelu sain + pousse</p>
+        <ul>
+            <li>Stimule la circulation</li>
+            <li>Lutte contre les pellicules</li>
+            <li>Fortifie les cheveux</li>
+        </ul>
+         <a href="https://wa.me/22389501934?text=Bonjour%20je%20veux%20commander%20le%20melange%20nigelle%20+%20girofle%20" target="_blank">
+            <button>Commander</button>
+        </a>
+    </div>
+
+    <div class="melange-card">
+        <h3>🌴 Coco + Jojoba</h3>
+        <p><strong>Effet :</strong> hydratation parfaite</p>
+        <ul>
+            <li>Nourrit sans alourdir</li>
+            <li>Rend les cheveux doux</li>
+            <li>Apporte brillance</li>
+        </ul>
+         <a href="https://wa.me/22389501934?text=Bonjour%20je%20veux%20commander%20le%20melange%20coco%20+%20jojoba%20" target="_blank">
+            <button>Commander</button>
+        </a>
+    </div>
+
+    <div class="melange-card">
+        <h3>💛 Olive + Ricin</h3>
+        <p><strong>Effet :</strong> nutrition intense + pousse</p>
+        <ul>
+            <li>Cheveux plus forts</li>
+            <li>Hydratation profonde</li>
+            <li>Réduction de la casse</li>
+        </ul>
+ <a href="https://wa.me/22389501934?text=Bonjour%20je%20veux%20commander%20le%20melange%20olive%20+%20Ricin%20" target="_blank">
+            <button>Commander</button>
+        </a>
+    </div>
+
+    <div class="melange-card">
+        <h3>✨ Jojoba + Romarin</h3>
+        <p><strong>Effet :</strong> cuir chevelu équilibré</p>
+        <ul>
+            <li>Régule le sébum</li>
+            <li>Réduit les pellicules</li>
+            <li>Favorise la pousse</li>
+        </ul>
+         <a href="https://wa.me/22389501934?text=Bonjour%20je%20veux%20commander%20le%20melange%20jojoba%20+%20Romarin%20" target="_blank">
+            <button>Commander</button>
+        </a>
+    </div>
+
+    <div class="melange-card">
+        <h3>🌿 Fenugrec + Moutarde</h3>
+        <p><strong>Effet :</strong> pousse rapide + volume</p>
+        <ul>
+            <li>Active la circulation</li>
+            <li>Donne du volume</li>
+            <li>Renforce les cheveux</li>
+        </ul>
+         <a href="https://wa.me/22389501934?text=Bonjour%20je%20veux%20commander%20le%20melange%20fenugrec%20+%20moutarde%20" target="_blank">
+            <button>Commander</button>
+        </a>
+    </div>
+
+    <div class="melange-card">
+        <h3>🌟 Nigelle + Ricin</h3>
+        <p><strong>Effet :</strong> pousse + réparation</p>
+        <ul>
+            <li>Fortifie les cheveux</li>
+            <li>Réduit la chute</li>
+            <li>Améliore la santé globale</li>
+        </ul>
+         <a href="https://wa.me/22389501934?text=Bonjour%20je%20veux%20commander%20le%20melange%20nigelle%20+%20Ricin%20" target="_blank">
+            <button>Commander</button>
+        </a>
+    </div>
+
+    <div class="melange-card">
+        <h3>✨ Busserole + Jojoba (peau)</h3>
+        <p><strong>Effet :</strong> teint unifié</p>
+        <ul>
+            <li>Réduit les taches</li>
+            <li>Hydrate sans graisser</li>
+            <li>Donne éclat naturel</li>
+        </ul>
+         <a href="https://wa.me/22389501934?text=Bonjour%20je%20veux%20commander%20le%20melange%20busserole%20+%20jojoba%20" target="_blank">
+            <button>Commander</button>
+        </a>
+    </div>
+</div>
+<div class="melanges">
+    <h2>🌟✨ Mélange_Trio</h2>
+
+    <div class="melange-card">
+        <h3>💇🏽‍♀️ Ricin + Moutarde + Fenugrec</h3>
+        <p><strong>Effet :</strong> pousse extrême + volume</p>
+        <ul>
+            <li>Accélère fortement la croissance</li>
+            <li>Donne un volume intense</li>
+            <li>Renforce les racines</li>
+        </ul>
+        <a href="https://wa.me/22389501934?text=Bonjour%20je%20veux%20commander%20le%20melange%20Ricin%20+%20Moutarde%20+%20Fenugrec" target="_blank">
+            <button>Commander</button>
+        </a>
+    </div>
+
+    <div class="melange-card">
+        <h3>🌿 Ricin + Nigelle + Romarin</h3>
+        <p><strong>Effet :</strong> anti-chute + pousse rapide</p>
+        <ul>
+            <li>Réduit fortement la chute</li>
+            <li>Stimule la pousse</li>
+            <li>Répare les cheveux abîmés</li>
+        </ul>
+        <a href="https://wa.me/22389501934?text=Bonjour%20je%20veux%20commander%20le%20melange%20Ricin%20+%20Nigelle%20+%20Romarin" target="_blank">
+            <button>Commander</button>
+        </a>
+    </div>
+
+    <div class="melange-card">
+        <h3>🔥 Girofle + Nigelle + Ricin</h3>
+        <p><strong>Effet :</strong> pousse + cuir chevelu sain</p>
+        <ul>
+            <li>Active la circulation sanguine</li>
+            <li>Lutte contre pellicules</li>
+            <li>Renforce les cheveux</li>
+        </ul>
+        <a href="https://wa.me/22389501934?text=Bonjour%20je%20veux%20commander%20le%20melange%20Girofle%20+%20Nigelle%20+%20Ricin" target="_blank">
+            <button>Commander</button>
+        </a>
+    </div>
+
+    <div class="melange-card">
+        <h3>🌴 Coco + Jojoba + Olive</h3>
+        <p><strong>Effet :</strong> hydratation + nutrition intense</p>
+        <ul>
+            <li>Nourrit en profondeur</li>
+            <li>Donne douceur et brillance</li>
+            <li>Répare les cheveux secs</li>
+        </ul>
+        <a href="https://wa.me/22389501934?text=Bonjour%20je%20veux%20commander%20le%20melange%20Coco%20+%20Jojoba%20+%20Olive" target="_blank">
+            <button>Commander</button>
+        </a>
+    </div>
+
+    <div class="melange-card">
+        <h3>✨ Fenugrec + Moutarde + Romarin</h3>
+        <p><strong>Effet :</strong> pousse rapide + densité</p>
+        <ul>
+            <li>Active la circulation</li>
+            <li>Augmente la densité capillaire</li>
+            <li>Fortifie les cheveux</li>
+        </ul>
+        <a href="https://wa.me/22389501934?text=Bonjour%20je%20veux%20commander%20le%20melange%20Fenugrec%20+%20Moutarde%20+%20Romarin" target="_blank">
+            <button>Commander</button>
+        </a>
+    </div><p class="message-fin">Merci de passer vos commandes !</p>
+</div>
